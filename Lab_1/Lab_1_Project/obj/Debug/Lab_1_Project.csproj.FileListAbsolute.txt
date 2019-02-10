@@ -1,0 +1,7 @@
+D:\Учеба\Тестирование ПО\Lab_1\Lab_1_Project\bin\Debug\Lab_1_Project.exe.config
+D:\Учеба\Тестирование ПО\Lab_1\Lab_1_Project\bin\Debug\Lab_1_Project.exe
+D:\Учеба\Тестирование ПО\Lab_1\Lab_1_Project\bin\Debug\Lab_1_Project.pdb
+D:\Учеба\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.csprojAssemblyReference.cache
+D:\Учеба\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.csproj.CoreCompileInputs.cache
+D:\Учеба\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.exe
+D:\Учеба\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.pdb
