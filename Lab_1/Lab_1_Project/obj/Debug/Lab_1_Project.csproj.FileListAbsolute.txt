@@ -5,3 +5,17 @@ D:\Учеба\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_
 D:\Учеба\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.csproj.CoreCompileInputs.cache
 D:\Учеба\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.exe
 D:\Учеба\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.pdb
+D:\Study\Тестирование ПО\Lab_1\Lab_1_Project\bin\Debug\Lab_1_Project.exe.config
+D:\Study\Тестирование ПО\Lab_1\Lab_1_Project\bin\Debug\Lab_1_Project.exe
+D:\Study\Тестирование ПО\Lab_1\Lab_1_Project\bin\Debug\Lab_1_Project.pdb
+D:\Study\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.csprojAssemblyReference.cache
+D:\Study\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.csproj.CoreCompileInputs.cache
+D:\Study\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.exe
+D:\Study\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.pdb
+C:\Study\Тестирование ПО\Lab_1\Lab_1_Project\bin\Debug\Lab_1_Project.exe.config
+C:\Study\Тестирование ПО\Lab_1\Lab_1_Project\bin\Debug\Lab_1_Project.exe
+C:\Study\Тестирование ПО\Lab_1\Lab_1_Project\bin\Debug\Lab_1_Project.pdb
+C:\Study\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.csprojAssemblyReference.cache
+C:\Study\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.csproj.CoreCompileInputs.cache
+C:\Study\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.exe
+C:\Study\Тестирование ПО\Lab_1\Lab_1_Project\obj\Debug\Lab_1_Project.pdb

@@ -12,12 +12,7 @@ namespace Lab_1_Project
 
         public Triangle(double a, double b, double c)
         {
-            if (CheckSides(a, b, c))
-            {
-                this.a = a;
-                this.b = b;
-                this.c = c;
-            }
+            SetSides(a, b, c);
         }
 
         public void SetSides(double a, double b, double c)

@@ -15,27 +15,50 @@ namespace Lab_1_Project
             else if (path == null)
                 throw new NullReferenceException("The string has no reference");
 
-            for (int i = path.Length - 1; i > 0; i--) // Выделяем короткое имя
-            {
-                if (path[i] == '\\')
-                {
-                    path = path.Substring(i + 1);
-                    break;
-                }
-            }
+            path = SelectShortName(path);
+            path = SelectExpansion(path);
+            path = UpperString(path);
 
-            for (int i = path.Length - 1; i > 0; i--) // Выделяем расширение
-            {
-                if (path[i] == '.')
-                {
-                    path = path.Substring(0, i);
-                    break;
-                }
-            }
-
-            path += ".tmp";
-            path = path.ToUpper();
             return path;
+        }
+
+        public string SelectShortName(string fullName)
+        {
+            string shortName = null;
+
+            for (int i = fullName.Length - 1; i > 0; i--) // Выделяем короткое имя
+            {
+                if (fullName[i] == '\\')
+                {
+                    shortName = fullName.Substring(i + 1);
+                    break;
+                }
+            }
+
+            return shortName;
+        }
+
+        public string SelectExpansion(string fileName)
+        {
+            string nameWithExpansion = null;
+
+            for (int i = fileName.Length - 1; i > 0; i--) // Выделяем расширение
+            {
+                if (fileName[i] == '.')
+                {
+                    nameWithExpansion = fileName.Substring(0, i);
+                    break;
+                }
+            }
+
+            nameWithExpansion += ".tmp";
+            return nameWithExpansion;
+        }
+
+        public string UpperString(string fileName)
+        {
+            fileName = fileName.ToUpper();
+            return fileName;
         }
     }
 }

@@ -23,6 +23,34 @@ namespace Lab_1_Test
         }
 
         [TestMethod]
+        public void GetShortName()
+        {
+            StringFormatter stringFormatter = new StringFormatter();
+            Assert.AreEqual(@"installbackupandsync.exe", stringFormatter.SelectShortName(@"C:\Users\Дмитрий\Downloads\installbackupandsync.exe"));
+        }
+
+        [TestMethod]
+        public void GetExpansion()
+        {
+            StringFormatter stringFormatter = new StringFormatter();
+            Assert.AreEqual(@"step.tmp", stringFormatter.SelectExpansion(@"step.doc"));
+        }
+
+        [TestMethod]
+        public void GetExpansionTMP()
+        {
+            StringFormatter stringFormatter = new StringFormatter();
+            Assert.AreEqual(@"step.tmp", stringFormatter.SelectExpansion(@"step.tmp"));
+        }
+
+        [TestMethod]
+        public void GetUpperString()
+        {
+            StringFormatter stringFormatter = new StringFormatter();
+            Assert.AreEqual(@"ЭКОСИСТЕМА СТЕПИ.TMP", stringFormatter.UpperString(@"Экосистема степи.tmp"));
+        }
+
+        [TestMethod]
         public void StandartString()
         {
             StringFormatter stringFormatter = new StringFormatter();

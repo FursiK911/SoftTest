@@ -1,16 +1,17 @@
-﻿using System;
+﻿using Lab_2.Project_Code;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab_1_Project
+namespace Lab_2.Test_Code
 {
-    public class ArrayProcessor
+    public class ArrayProcessor : IArrayProcessor
     {
-        public double[] SortAndFilter(double[] a)
+        public double[] SortAndFilter(double[] array)
         {
-            double[] _newArray = new double[a.Length];
+            double[] _newArray = array;
             _newArray = PositiveValue(_newArray);
             _newArray = SortArray(_newArray);
             _newArray = ReverseArray(_newArray);
