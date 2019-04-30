@@ -1,0 +1,161 @@
+{
+  "id": "baf45767-bddc-48ff-ab07-8f73d72676cf",
+  "version": "2.0",
+  "name": "Lab_3",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "d92010a3-716e-45cb-8d31-3bf77f6cb46e",
+    "name": "Lab_3",
+    "commands": [{
+      "id": "3aa2953b-c2cf-4d74-9b56-199d691b5068",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c80fa71-1fa4-4dff-8974-2ef230413da2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15c4e029-b395-45ef-bf07-4a90c1832df4",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "unit Testing"
+    }, {
+      "id": "e42ca82e-51a6-4123-b2de-2db645fe09fc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "26498233-f03a-43d1-a581-a2e33de6fb48",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g:nth-child(2) .LC20lb",
+      "targets": [
+        ["css=.g:nth-child(2) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div[2]/div/div[2]/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Unit testing - Wikipedia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "955c6ade-dd36-450d-bd74-cc29c5e6b75f",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1be5ff2c-5de2-49f0-a107-2891ab48b1b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "NUnit"
+    }, {
+      "id": "f67dcf54-59f7-4f58-a6bb-ced535b186c5",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "1cb2f91e-6556-4c81-b8be-afe56218cfee",
+      "comment": "",
+      "command": "click",
+      "target": "id=p-lang",
+      "targets": [
+        ["id=p-lang", "id"],
+        ["css=#p-lang", "css:finder"],
+        ["xpath=//div[@id='p-lang']", "xpath:attributes"],
+        ["xpath=//div[@id='mw-panel']/div[6]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76537c39-1235-42d9-8295-8f9c4d0b4174",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Русский",
+      "targets": [
+        ["linkText=Русский", "linkText"],
+        ["css=.interwiki-ru > .interlanguage-link-target", "css:finder"],
+        ["xpath=//a[contains(text(),'Русский')]", "xpath:link"],
+        ["xpath=//div[@id='p-lang']/div/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ru.wikipedia.org/wiki/NUnit')]", "xpath:href"],
+        ["xpath=//div[2]/div[6]/div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Русский')]", "xpath:innerText"]
+      ],
+      "value": "Русский"
+    }, {
+      "id": "2561ed21-23eb-417d-ba7a-45f0ac8c178b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mw-parser-output",
+      "targets": [
+        ["css=.mw-parser-output", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54c21c24-a98a-4878-94cb-62271ed36ef1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "382cd171-e6ef-40ed-bf39-cb8d7dc96e36",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d92010a3-716e-45cb-8d31-3bf77f6cb46e"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
