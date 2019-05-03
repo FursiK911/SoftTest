@@ -24,8 +24,8 @@ namespace TestLab_3
         private Button _rightDeleteButton;
         private Button _repositionButton;
         private Button _returnButton;
-        private List<string> correctPath;
-        private List<string> invalidPath;
+        private List<string> _correctPath;
+        private List<string> _invalidPath;
 
 
         public void Init()
@@ -41,36 +41,36 @@ namespace TestLab_3
             _repositionButton = _window.Get<Button>(SearchCriteria.ByAutomationId("buttonLeftRemove"));
             _returnButton = _window.Get<Button>(SearchCriteria.ByAutomationId("buttonRightComeBack"));
 
-            correctPath = new List<string>();
-            correctPath.Add(@"C:\Study\Тестирование ПО\Lab_3\Lab_3\Lab_3\bin\Debug");
-            correctPath.Add(@"C:\Users\Дмитрий\Documents");
-            correctPath.Add(@"D:\Games\Steam");
-            correctPath.Add(@"G:\");
-            correctPath.Add(@"G:\Учеба\TCPP");
-            correctPath.Add(@"D:\Open Server 5.2.9\OSPanel\domains\Coursework");
-            correctPath.Add(@"F:\Cisco Packet Tracer 7.2.1");
-            correctPath.Add(@"C:\Users\Дмитрий\Google Диск");
-            correctPath.Add(@"D:\Program Files (x86)");
-            correctPath.Add(@"C:\Users\Public");
+            _correctPath = new List<string>();
+            _correctPath.Add(@"C:\Study\Тестирование ПО\Lab_3\Lab_3\Lab_3\bin\Debug");
+            _correctPath.Add(@"C:\Users\Дмитрий\Documents");
+            _correctPath.Add(@"D:\Games\Steam");
+            _correctPath.Add(@"G:\");
+            _correctPath.Add(@"G:\Учеба\TCPP");
+            _correctPath.Add(@"D:\Open Server 5.2.9\OSPanel\domains\Coursework");
+            _correctPath.Add(@"F:\Cisco Packet Tracer 7.2.1");
+            _correctPath.Add(@"C:\Users\Дмитрий\Google Диск");
+            _correctPath.Add(@"D:\Program Files (x86)");
+            _correctPath.Add(@"C:\Users\Public");
 
-            invalidPath = new List<string>();
-            invalidPath.Add(@"G\");
-            invalidPath.Add(@"C\Users//\/\/\Public");
-            invalidPath.Add(@"123523534");
-            invalidPath.Add(@"asfdsfdgfgfh");
-            invalidPath.Add(@"asdasd123123");
+            _invalidPath = new List<string>();
+            _invalidPath.Add(@"G\");
+            _invalidPath.Add(@"C\Users//\/\/\Public");
+            _invalidPath.Add(@"123523534");
+            _invalidPath.Add(@"asfdsfdgfgfh");
+            _invalidPath.Add(@"asdasd123123");
         }
 
         [TestMethod]
         public void AddCorrectPathTest()
         {
             Init();
-            for (int i = 0; i < correctPath.Count; i++)
+            for (int i = 0; i < _correctPath.Count; i++)
             {
-                _editPath.BulkText = correctPath[i];
+                _editPath.BulkText = _correctPath[i];
                 _addButton.Click();
             }
-            Assert.AreEqual(correctPath.Count, _leftListBox.Items.Count);
+            Assert.AreEqual(_correctPath.Count, _leftListBox.Items.Count);
             _window.Close();
         }
 
@@ -78,12 +78,12 @@ namespace TestLab_3
         public void AddInvalidPathTest()
         {
             Init();
-            for (int i = 0; i < invalidPath.Count; i++)
+            for (int i = 0; i < _invalidPath.Count; i++)
             {
-                _editPath.BulkText = invalidPath[i];
+                _editPath.BulkText = _invalidPath[i];
                 _addButton.Click();
             }
-            Assert.AreEqual(invalidPath.Count, _rightListBox.Items.Count);
+            Assert.AreEqual(_invalidPath.Count, _rightListBox.Items.Count);
             _window.Close();
         }
 
